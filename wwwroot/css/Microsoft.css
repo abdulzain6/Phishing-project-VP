@@ -1,0 +1,25 @@
+body {
+    margin: auto;
+    padding: 10px
+}
+
+a:hover {
+    text-decoration: underline !important
+}
+
+input:focus {
+    border-bottom-color: #0067b8 !important
+}
+
+@media only screen and (max-width:600px) {
+    #box {
+        width: 110% !important;
+        height: 100% !important;
+        margin-top: -10 !important;
+        margin-left: -10 !important
+    }
+
+    button {
+        margin-right: 60px !important
+    }
+}

